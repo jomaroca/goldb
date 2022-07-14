@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GolDB</title>
+    <link rel="stylesheet" href="vista/css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="header" id="inicio">
+        <div class="contenedor"></div>
+        <a href="vista/loguear/login.php">
+            <img class="btnSesion" src="vista/img/user.png" alt="Usuarios"></a>
+            <img class="btnMenu" src="vista/img/menu.png" alt="Menú">
+            <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#equipos">Equipos</a>
+                <a href="#galeria">Galería</a>
+                <a href="#jugadores">Jugadores</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+    </section>
+    
+    <main>
+        <section class="contenedor" id="equipos">         
+            <h2 class="titulo">Equipos de leyenda</h2>
+            <div class="contenedor-equipos">
+                <div class="fila-uno-equipos">
+                    <div class="equipo">
+                        <a href="vista/usuario/barcelona.php"><button class="barcelona"></button></a>
+                    </div>
+                    <div class="equipo">
+                        <a href="vista/usuario/milan.php"><button class="milan"></button></a>
+                    </div>
+                    <div class="equipo">
+                        <a href="vista/usuario/manchester.php"><button class="manchester"></button></a>
+                    </div>
+                    <div class="equipo">
+                        <a href="vista/usuario/munich.php"><button class="munich"></button></a>
+                    </div>
+                </div>
+                <div class="fila-dos-equipos">
+                    <div class="equipo">
+                        <a href="vista/usuario/madrid.php"><button class="madrid"></button></a>
+                    </div>
+                    <div class="equipo">
+                        <a href="vista/usuario/juventus.php"><button class="juventus"></button></a>
+                    </div>
+                    <div class="equipo">
+                        <a href="vista/usuario/liverpool.php"><button class="liverpool"></button></a>
+                    </div>
+                    <div class="equipo">
+                        <a href="vista/usuario/ajax.php"><button class="ajax"></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="galeria" id="galeria">
+            <div class="contenedor">
+                <h2 class="titulo">Galería de Imágenes</h2>
+                <div class="contenedor-galeria">
+                    <img src="vista/img/fcb.jpg" class="img-galeria" alt="barcelona">
+                    <img src="vista/img/acm.jpg" class="img-galeria" alt="milan">
+                    <img src="vista/img/mufc.jpg" class="img-galeria" alt="manchester">
+                    <img src="vista/img/fcbm.jpg" class="img-galeria" alt="munich">
+                    <img src="vista/img/rm.jpg" class="img-galeria" alt="madrid">
+                    <img src="vista/img/jfc.jpg" class="img-galeria" alt="juventus">
+                    <img src="vista/img/lfc.jpg" class="img-galeria" alt="liverpool">
+                    <img src="vista/img/afca.jpg" class="img-galeria" alt="ajax">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="vista/img/close.png" class="close" alt="Cerrar">
+            <img src="" class="agregar-imagen" alt="">
+        </div>
+        <section class="contenedor" id="jugadores">
+            <h2 class="titulo">Jugadores de leyenda</h2>
+            <section class="contenedor-jugadores">
+                <div class="jugador">
+                    <a href="vista/usuario/usuario.php"><button class="goleador"></button></a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="contacto" id="contacto">
+        <div class="contenedor">
+                <div class="contenedor-contacto">
+                    <h2 class="marca">GolDB</h2>
+                    <p class="lema">Base de Datos Histórica de Fútbol</p>
+                </div>
+        </div>
+        <div class="linea"></div>
+    </footer>
+    <script src="vista/js/menu.js"></script>
+    <script src="vista/js/lightbox.js"></script>
+</body>
+</html>

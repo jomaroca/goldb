@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: rgb(133, 130, 130);
+}
+
+/* Cabezera */
+
+:root{
+    scroll-behavior: smooth;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header{
+    height: 100vh;
+    background-image: url(../img/estadio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.head{
+    padding: 0;
+    margin-left: 30px;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnSesion{
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.btnMenu{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    width: 20vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #1c44616e 0%, #1c4461f8 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 0;
+    transform: translateX(110%);
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translateX(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.titulo{
+    color: rgba(9, 24, 56, 0.787);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+/* Equipos de leyenda */
+
+.contenedor-equipos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fila-uno-equipos{
+    width: 145%;
+    display:flex;
+    justify-content:center;
+    margin-bottom:10px;
+    flex-wrap: wrap;
+}
+
+.fila-dos-equipos{
+    width: 145%;
+    display:flex;
+    justify-content:center;
+    margin-bottom:10px;
+    flex-wrap: wrap;
+}
+
+.equipo{
+    padding: 10px;
+}
+
+.barcelona{
+    background-image: url(../img/bar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.milan{
+    background-image: url(../img/mil.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.manchester{
+    background-image: url(../img/man.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.munich{
+    background-image: url(../img/mun.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.madrid{
+    background-image: url(../img/mad.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.juventus{
+    background-image: url(../img/juv.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.liverpool{
+    background-image: url(../img/liv.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.ajax{
+    background-image: url(../img/aja.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+/* Galería de imágenes */
+
+.galeria{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.img-galeria{
+    width: 25%;
+    display: block;
+    margin-bottom: 25px;
+    padding: 3px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen{
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Jugadores de leyenda */
+
+.contenedor-jugadores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.jugador{
+    margin-bottom: 20px;
+}
+
+.goleador{
+    background-image: url(../img/golden.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 0;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.goleador:hover{
+    transform: rotate(55deg);
+}
+
+/* Pie de página */
+
+.contacto{
+    background: #1C4461;
+    padding-bottom: 0.1px;
+}
+
+.contenedor-contacto{
+    height: 20px;
+    color: #fff;
+}
+
+.marca{
+    font-weight: 500;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.lema{
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.linea{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 1px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+/* Tablas */
+
+#body{
+	background-color: #1C4461;
+}
+
+.table-container{
+	margin: 10px auto;
+	width: 80%;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 8px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+thead{
+	background-color: #409DE0;
+	border-bottom: solid 5px #3A8CC7;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #45A7ED;
+	color: white;
+}
+
+/* Formularios */
+
+.form{
+	background-color: white;
+	border-radius: 3px;
+	font-size: 0.8em;
+	padding: 15px;
+	width: 320px;
+    margin: 80px auto;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.title{
+    color: #999;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.field{
+	border: solid 1px #ccc;
+	padding: 10px;   
+	outline: none;
+    width: 280px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.field:focus{
+	border-color: #1864a3;
+}
+
+.btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+	outline: none;
+    width: 280px;
+    margin-top: 5px;
+}
+        
+.btn-blue{
+    color: white;
+    background-color: #3c79c9;
+    margin-bottom: 10px;
+}
+
+.btn-blue:hover{
+    background-color: #376fb8;	
+}
+
+.btn-blue:active{
+    background-color: #295c96;
+}
+
+a{
+    color: #1C4461;
+}
+
+/* Botones administrador */
+
+.btns-container{
+    margin: 10%;
+}
+
+.btn-white{
+    background-color: #FCFDFD;
+    border-radius: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    width: 220px;
+    height: 150px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #1C4461;
+}
+
+.btn-white:hover{
+    background-color: #A5BECF;	
+}
+
+.btn-white:active{
+    background-color: #8bc1da;
+}
+
+/* Botones, iconos y tablas */
+
+.bttn{
+    border-radius: 5px;
+    display: flex;
+    border: 0;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.bttn-edit{
+    background-image: url(../img/edit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+	height: 20px;
+}
+
+.bttn-delete{
+    background-image: url(../img/delete.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+	height: 20px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn-create{
+    color: white;
+    background-color: #256999;
+    width: 255px;
+    margin-right: 20px;
+}
+
+.btn-create:hover{
+    background-color: #196195;
+}
+
+.btn-create:active{
+    background-color: #2c79b1;
+}
+
+.btn-big{
+    color: white;
+    background-color: #3CC93F;
+    width: 255px;
+    margin-right: 20px;
+}
+
+.btn-big:hover{
+    background-color: #37B839;	
+}
+
+.btn-big:active{
+    background-color: #29962A;
+}
+
+.btn-little{
+    color: white;
+    background-color: #E34242;
+    width: 255px;
+    margin-right: 20px;
+}
+
+.btn-little:hover{
+    background-color: #C43535;	
+}
+
+.btn-little:active{
+    background-color: #A62828;
+}
+
+.btn-filter{
+    background-color: #ffffff;
+    color: #1C4461;
+    width: 255px;
+    margin-right: 20px;
+}
+
+.btn-filter:hover{
+    background-color: #a5c7d3;	
+}
+
+.btn-filter:active{
+    background-color: #8bc1da;
+}
+
+.btn-search{
+    background-color: #ffffff;
+    color: #1C4461;
+    width: 255px;
+    margin-right: 20px;
+}
+
+.btn-search:hover{
+    background-color: #a5c7d3;	
+}
+
+.btn-search:active{
+    background-color: #8bc1da;
+}
+
+.legend{
+    color: white;
+}
+
+.fields{
+	border: solid 1px #ccc;
+	padding: 8px;   
+	outline: none;
+    width: 55px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.subtitulo{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.enlace{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+    
+    .agregarImagen{
+        width: 80%;
+    }
+
+    .table-container{
+        width: 100vw;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+    
+    .agregar-imagen{
+        width: 90%;
+    }
+
+    .table-container{
+        width: 100vw;
+    }
+
+}
